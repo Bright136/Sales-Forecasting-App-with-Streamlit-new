@@ -44,21 +44,19 @@ Run the app using streamlit run app.py
 To execute the app, follow these steps:
 After all requirement have been install
 
-Step 1
-Step 2
-Step 3
-...
+Step 1: At the root of your repository do streamlit run app.py
+
 <table>
     <tr>
         <th> Streamlit App </th>
     </tr>
     <tr>
-       <td><img src="screenshots/Screenshot2023-04-23045325.jpeg"/></td> 
-
-        <td><img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></td>
-       <td><img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></td>
+       <tr><img src="screenshots/Screenshot2023-04-23045325.jpeg"/></rt>
+       <tr<img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></tr>
+       <tr><img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></tr>
     </tr>
 </table>
+
 ## Author
 Please feel free to provide feedback, suggestions, or report any issues in the GitHub repository.
 
