@@ -1,0 +1,9 @@
+date,Store_number,Family,Item_onpromo,Oil_prices,Holiday_level,Holiday_city,TypeOfDay,Store_city,Store_state,Store_type,Cluster
+2019-07-06,1,AUTOMOTIVE,1,1.0,Not Holiday,Not Holiday,No work,Quito,Pichincha,A,1
+2019-07-06,1,AUTOMOTIVE,1,1.0,Not Holiday,Not Holiday,No work,Quito,Pichincha,A,1
+2019-07-06,36,AUTOMOTIVE,343,1.0,Not Holiday,Not Holiday,No work,Quito,Pichincha,A,10
+2019-07-06,1,AUTOMOTIVE,1,1.0,Not Holiday,Not Holiday,No work,Quito,Pichincha,A,1
+2019-07-06,39,AUTOMOTIVE,348,1.0,Not Holiday,Not Holiday,No work,Quito,Pichincha,A,12
+2019-07-06,24,AUTOMOTIVE,227,1.0,Local,Libertad,Additional Holiday,Quito,Pichincha,B,7
+2019-07-06,24,AUTOMOTIVE,227,1.0,Local,Libertad,Additional Holiday,Quito,Pichincha,B,7
+2019-07-06,24,AUTOMOTIVE,227,1.0,Local,Libertad,Additional Holiday,Quito,Pichincha,B,7
