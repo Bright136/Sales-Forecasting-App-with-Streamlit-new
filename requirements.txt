@@ -9,3 +9,4 @@ jupyter_client==6.1.12
 jupyter_core==4.7.1
 jupyterlab==3.0.14
 notebook==6.3.0
+Streamlit==1.21.0
