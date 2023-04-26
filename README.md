@@ -44,16 +44,20 @@ Run the app using streamlit run app.py
 To execute the app, follow these steps:
 After all requirement have been install
 
-Step 1: At the root of your repository do streamlit run app.py
+Step 1: At the root of your repository 
+"https://drive.google.com/uc?export=view&id=1CzSiigqUzAxS9fwbvp10Tsy5lRW5BNT9"
+
+do streamlit run app.py
 
 <table>
     <tr>
         <th> Streamlit App </th>
     </tr>
+    </tr>
     <tr>
-       <tr><img src="screenshots/Screenshot2023-04-23045325.jpeg"/></rt>
-       <tr<img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></tr>
-       <tr><img src="./screenshots/Screenshot2023-04-23045325.jpeg"/></tr>
+       <tr><img src="https://drive.google.com/file/d/1CzSiigqUzAxS9fwbvp10Tsy5lRW5BNT9/view?usp=share_link.png"/></rt>
+       <tr<img src="https://drive.google.com/uc?export=view&id=1q0j5US_jEENGlHoJs3IwRqSzkGkbMV7l”"/></tr>
+       <tr><img src= "https://drive.google.com/uc?export=view&id=14e4T_llbCafKx0fC_JU2QqXIRZQzNjG"/></tr>
     </tr>
 </table>
 
