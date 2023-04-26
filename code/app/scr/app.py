@@ -18,8 +18,12 @@ st.set_page_config(
 
 
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
-print(DIRPATH)
 
+ml_components_1 = os.path.join(DIRPATH, "assets",  "ml_components_1.pkl")
+ml_components_2 = os.path.join(DIRPATH, "assets",  "ml_components_2.pkl")
+
+hist_df = os.path.join(DIRPATH, "assets",  "history.csv")
+image_path = os.path.join(DIRPATH, "assets",  "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
 
 
 def load_pickle(filename):
@@ -35,8 +39,8 @@ def check_csv(csv_file, data):
         history.to_csv(csv_file, encoding='utf-8', index=False) 
 
 #load all pickle files
-ml_compos_1 = load_pickle('code/app/ml_components_1.pkl')
-ml_compos_2 = load_pickle('code/app/ml_components_2.pkl')
+ml_compos_1 = load_pickle(ml_components_1)
+ml_compos_2 = load_pickle(ml_components_2)
 
 # components in ml_compos_2  
 categorical_pipeline = ml_compos_2['categorical_pipeline']
@@ -58,7 +62,7 @@ holiday_level = 'Not Holiday'
 hol_city = 'Not Holiday'
 # st.sidebar.selectbox('Menu', ['About', 'Model'])
 with my_expander:
-    image = Image.open('images/justin-lim-JKjBsuKpatU-unsplash.jpg')
+    image = Image.open(image_path)
     st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.markdown("""
         <style>
@@ -140,7 +144,7 @@ if button:
 
     st.metric('Predicted Sale', value=model.predict(processed_data))
     # predictions = model.predict(process_data)
-    csv_file = 'history_df.csv'
+    csv_file = hist_df
     check_csv(csv_file, data)
     history = pd.read_csv(csv_file)
     with st.expander('Download Input History'):
