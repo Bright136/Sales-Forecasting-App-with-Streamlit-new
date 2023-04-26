@@ -5,7 +5,6 @@
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
 | LP4-1 | Sales Forecasting App |  [Building a Sales Forecasting App with Streamlit](/) | [Sales Forecasting App](/) |
-
 ## Project Description
 This project involves building a sales forecasting app using Streamlit and Gradio. The app allows users to input various  parameters and obtain a sales prediction for those parameter.
 
@@ -19,7 +18,9 @@ How the app works
 Setup
 To set up the project locally, follow these steps:
 
-Clone the repository using git clone https://github.com/Bright136/Sales-Forecasting-App-with-Streamlit-new.git
+- Clone the repository using:
+        
+        git clone https://github.com/Bright136/Sales-Forecasting-App-with-Streamlit-new.git
 
 OR
 
@@ -37,29 +38,29 @@ Do:
 - Linux & MacOs:
 
         python3 -m venv ve  nv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt
-Run the app using streamlit run app.py
 
 
 ## App Execution
 To execute the app, follow these steps:
 After all requirement have been install
 
-Step 1: At the root of your repository 
-"https://drive.google.com/uc?export=view&id=1CzSiigqUzAxS9fwbvp10Tsy5lRW5BNT9"
+At the root of your repository in your terminal
+run the command: ` streamlit run .\code\app\scr\app.py`
 
-do streamlit run app.py
 
-<table>
-    <tr>
-        <th> Streamlit App </th>
-    </tr>
-    </tr>
-    <tr>
-       <tr><img src="https://drive.google.com/file/d/1CzSiigqUzAxS9fwbvp10Tsy5lRW5BNT9/view?usp=share_link.png"/></rt>
-       <tr<img src="https://drive.google.com/uc?export=view&id=1q0j5US_jEENGlHoJs3IwRqSzkGkbMV7l”"/></tr>
-       <tr><img src= "https://drive.google.com/uc?export=view&id=14e4T_llbCafKx0fC_JU2QqXIRZQzNjG"/></tr>
-    </tr>
-</table>
+
+<span>Photos of the Streamlit App</span>
+
+
+
+<div align='center'> 
+    <img src="https://drive.google.com/uc?export=view&id=1CzSiigqUzAxS9fwbvp10Tsy5lRW5BNT9"/>
+    <img src="https://drive.google.com/uc?export=view&id=1qjrGWvlwbe_1V11MfPHf-aZYvY0PsV1X"/>
+    <img src="https://drive.google.com/uc?export=view&id=1q0j5US_jEENGlHoJs3IwRqSzkGkbMV7l"/>
+
+</div>
+
+
 
 ## Author
 Please feel free to provide feedback, suggestions, or report any issues in the GitHub repository.
