@@ -1,0 +1,1 @@
+An article was publised on this project on medium. Kinldy access it <a  href='https://medium.com/@eshunbright136/building-a-sales-forecasting-app-with-streamlit-438f8953b67b'>here.</a>
