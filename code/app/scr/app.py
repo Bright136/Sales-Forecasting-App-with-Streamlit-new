@@ -6,6 +6,11 @@ import datetime
 from PIL import Image
 import os
 from utils import create_dataframe, process_data
+from theme import set_theme
+
+# dark_theme = set_theme()
+
+
 st.set_page_config(
     page_title="CAPE TOWN ANALYTICS",
     page_icon="📉",
@@ -13,7 +18,7 @@ st.set_page_config(
     menu_items={
         'About': "# This is a header. This is an *extremely* cool app!"
     }
-)
+)  
 
 
 
