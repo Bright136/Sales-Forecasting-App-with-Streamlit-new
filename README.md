@@ -28,7 +28,8 @@ You can download the code
 
 At the root repository 
 
-`root :: streamlit-iris-app> ...`
+`root :: Sales-Forecasting-App-with-Streamlit-new
+> ...`
 
 Do:
 - Windows:
