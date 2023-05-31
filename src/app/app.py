@@ -24,11 +24,11 @@ st.set_page_config(
 
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
 
-ml_components_1 = os.path.join(DIRPATH, "assets",  "ml_components_1.pkl")
-ml_components_2 = os.path.join(DIRPATH, "assets",  "ml_components_2.pkl")
+ml_components_1 = os.path.join(DIRPATH, "assets",  "ml_components",  "ml_components_1.pkl")
+ml_components_2 = os.path.join(DIRPATH, "assets",  "ml_components", "ml_components_2.pkl")
 
-hist_df = os.path.join(DIRPATH, "assets",  "history.csv")
-image_path = os.path.join(DIRPATH, "assets",  "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
+hist_df = os.path.join(DIRPATH, "assets", "history.csv")
+image_path = os.path.join(DIRPATH, "assets", "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
 
 
 def load_pickle(filename):
@@ -81,7 +81,9 @@ with my_expander:
     ## Demo App
 
     This app predict sales from the parameters on the interface
-    """)        # create a three column layout
+    """)
+    
+    # create a three column layout
     col1, col2, col3 = st.columns(3)
 
     # create a date input to receive date
