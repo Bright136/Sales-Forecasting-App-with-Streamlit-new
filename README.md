@@ -4,7 +4,7 @@
 ## Summary
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
-| LP4-1 | Sales Forecasting App |  [Building a Sales Forecasting App with Streamlit]('https://medium.com/@eshunbright136/building-a-sales-forecasting-app-with-streamlit-438f8953b67b') | [Sales Forecasting App](/) |
+| LP4-1 | Sales Forecasting App |  [Building a Sales Forecasting App with Streamlit](https://medium.com/@eshunbright136/building-a-sales-forecasting-app-with-streamlit-438f8953b67b) | [Sales Forecasting App](/) |
 ## Project Description
 This project involves building a sales forecasting app using Streamlit and Gradio. The app allows users to input various  parameters and obtain a sales prediction for those parameter.
 
