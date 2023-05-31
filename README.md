@@ -66,22 +66,23 @@ run the command: ` streamlit run .\src\app\app.py`
 ## Author
 Please feel free to provide feedback, suggestions, or report any issues in the GitHub repository.
 
-<div align='center'>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Github ID</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bright Eshun</td>
-                <td><a href="https://github.com/Bright136" target="_blank" rel="nofollow">@Bright136</a></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Twitter</th>
+    <th>LinkedIn</th>
+    <th>GitHub</th>
+    <th>Hugging Face</th>
+  </tr>
+  <tr>
+    <td>Bright Eshun</td>
+    <td><a href="https://twitter.com/bright_eshun_">@bright_eshun_</a></td>
+    <td><a href="https://www.linkedin.com/in/bright-eshun-9a8a51100/">@brighteshun</a></td>
+    <td><a href="https://github.com/Bright136">@bright136</a></td>
+    <td><a href="https://huggingface.co/bright1">@bright1</a></td>
+  </tr>
+</table>
+
 
 
 
