@@ -46,7 +46,7 @@ To execute the app, follow these steps:
 After all requirement have been install
 
 At the root of your repository in your terminal
-run the command: ` streamlit run .\code\app\scr\app.py`
+run the command: ` streamlit run .\src\app\app.py`
 
 
 
