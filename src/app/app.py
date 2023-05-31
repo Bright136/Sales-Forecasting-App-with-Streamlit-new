@@ -1,14 +1,16 @@
+import sys
+import os
 import streamlit as st
 import pandas as pd
-import numpy as np
 import pickle
 import datetime
 from PIL import Image
-import os
-from utils import create_dataframe, process_data
-from theme import set_theme
 
-# dark_theme = set_theme()
+# Add the root folder to the Python module search path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+from src.utils import create_dataframe, process_data
+
 
 
 st.set_page_config(
@@ -24,11 +26,11 @@ st.set_page_config(
 
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
 
-ml_components_1 = os.path.join(DIRPATH, "assets",  "ml_components",  "ml_components_1.pkl")
-ml_components_2 = os.path.join(DIRPATH, "assets",  "ml_components", "ml_components_2.pkl")
+ml_components_1 = os.path.join(DIRPATH, "..","assets",  "ml_components",  "ml_components_1.pkl")
+ml_components_2 = os.path.join(DIRPATH, "..", "assets",  "ml_components", "ml_components_2.pkl")
 
-hist_df = os.path.join(DIRPATH, "assets", "history.csv")
-image_path = os.path.join(DIRPATH, "assets", "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
+hist_df = os.path.join(DIRPATH, "..","assets", "history.csv")
+image_path = os.path.join(DIRPATH, "..", "assets", "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
 
 
 def load_pickle(filename):
