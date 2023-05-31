@@ -1,4 +1,4 @@
-#  🚀 Sales F🤑recasting App Sales  🚀 
+#  🚀 Sales F🤑recasting App  🚀 
 
 
 ## Summary
@@ -13,7 +13,7 @@ How the app works
 - The app takes imput from users
 - The app then prepare and preprocess the inputs using function and pipelines
 - The app the predict the sales using the model emmbeded in it.
-- The app  uses the streamlit metric property to display the sale. 
+-  The app  uses the streamlit metric property to display the sale.
 ## Setup
 Setup
 To set up the project locally, follow these steps:
@@ -28,7 +28,7 @@ You can download the code
 
 At the root repository 
 
-`root :: streamlit-iris-app> ...`
+`root :: Sales-Forecasting-App-with-Streamlit-new> ...`
 
 Do:
 - Windows:
@@ -37,7 +37,7 @@ Do:
 
 - Linux & MacOs:
 
-        python3 -m venv ve  nv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt
+        python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt
 
 
 ## App Execution
