@@ -11,8 +11,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 
 from src.utils import create_dataframe, process_data
 
-
-
+# Set Streamlit page configuration
 st.set_page_config(
     page_title="CAPE TOWN ANALYTICS",
     page_icon="📉",
@@ -20,24 +19,18 @@ st.set_page_config(
     menu_items={
         'About': "# This is a header. This is an *extremely* cool app!"
     }
-)  
+)
 
-
-
+# Define directory paths
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
-
-ml_components_1 = os.path.join(DIRPATH, "..","assets",  "ml_components",  "ml_components_1.pkl")
-ml_components_2 = os.path.join(DIRPATH, "..", "assets",  "ml_components", "ml_components_2.pkl")
-
-hist_df = os.path.join(DIRPATH, "..","assets", "history.csv")
+ml_components_1 = os.path.join(DIRPATH, "..", "assets", "ml_components", "ml_components_1.pkl")
+ml_components_2 = os.path.join(DIRPATH, "..", "assets", "ml_components", "ml_components_2.pkl")
+hist_df = os.path.join(DIRPATH, "..", "assets", "history.csv")
 image_path = os.path.join(DIRPATH, "..", "assets", "images", "justin-lim-JKjBsuKpatU-unsplash.jpg")
 
 
-def load_pickle(filename):
-    with open(filename, 'rb') as file:
-        data = pickle.load(file)
-        return data 
 
+# check if csv file exits 
 def check_csv(csv_file, data):
     if os.path.isfile(csv_file):
         data.to_csv(csv_file, mode='a', header=False, encoding='utf-8', index=False)
@@ -45,29 +38,39 @@ def check_csv(csv_file, data):
         history = data.copy()
         history.to_csv(csv_file, encoding='utf-8', index=False) 
 
-#load all pickle files
+# Load pickle files
+def load_pickle(filename):
+    with open(filename, 'rb') as file:
+        data = pickle.load(file)
+        return data
+
 ml_compos_1 = load_pickle(ml_components_1)
 ml_compos_2 = load_pickle(ml_components_2)
 
-# components in ml_compos_2  
+# Extract components from ml_compos_2
 categorical_pipeline = ml_compos_2['categorical_pipeline']
 numerical_pipeliine = ml_compos_2['numerical_pipeline']
 model = ml_compos_2['model']
 
+# Extract columns from ml_compos_1
 num_cols = ml_compos_1['num_cols']
-cat_cols = ml_compos_1['cat_cols'] 
+cat_cols = ml_compos_1['cat_cols']
 hol_level_list = ml_compos_1['Holiday_level'].tolist()
 hol_city_list = ml_compos_1['Holiday_city'].tolist()
 
-# et the title for the app
+# Remove 'Not Holiday' from lists
 hol_city_list.remove('Not Holiday')
 hol_level_list.remove('Not Holiday')
 
+# Create a container for expanding content
 my_expander = st.container()
+
 
 holiday_level = 'Not Holiday'
 hol_city = 'Not Holiday'
 # st.sidebar.selectbox('Menu', ['About', 'Model'])
+
+# Expandable container for displaying content
 with my_expander:
     image = Image.open(image_path)
     st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
